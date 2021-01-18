@@ -10,6 +10,7 @@ import { CharacterTypesComponent } from './character-types/character-types.compo
 import { MagiDescriptionComponent } from './magi-description/magi-description.component';
 import { CharacterCreationGuideComponent } from './character-creation-guide/character-creation-guide.component';
 import { MagicSystemComponent } from './magic-system/magic-system.component';
+import { CreateCharacterComponent } from './create-character/create-character.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MagicSystemComponent } from './magic-system/magic-system.component';
     MagiDescriptionComponent,
     CharacterCreationGuideComponent,
     MagicSystemComponent,
+    CreateCharacterComponent,
   ],
   imports: [
     BrowserModule,
