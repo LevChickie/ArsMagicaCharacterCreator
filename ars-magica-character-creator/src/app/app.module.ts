@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { TitleComponent } from './title/title.component';
+import { MagicFormsComponent } from './magic-forms/magic-forms.component';
+import { CharacterTypesComponent } from './character-types/character-types.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroductionComponent,
-    TitleComponent
+    TitleComponent,
+    MagicFormsComponent,
+    CharacterTypesComponent
   ],
   imports: [
     BrowserModule,
