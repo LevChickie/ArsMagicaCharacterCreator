@@ -10,7 +10,6 @@ import { CharacterTypesComponent } from './character-types/character-types.compo
 import { MagiDescriptionComponent } from './magi-description/magi-description.component';
 import { CharacterCreationGuideComponent } from './character-creation-guide/character-creation-guide.component';
 import { MagicSystemComponent } from './magic-system/magic-system.component';
-import { AppRoutingComponent } from './app-routing/app-routing.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { AppRoutingComponent } from './app-routing/app-routing.component';
     MagiDescriptionComponent,
     CharacterCreationGuideComponent,
     MagicSystemComponent,
-    AppRoutingComponent
   ],
   imports: [
     BrowserModule,
