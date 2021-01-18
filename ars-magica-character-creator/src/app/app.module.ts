@@ -7,6 +7,10 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { TitleComponent } from './title/title.component';
 import { MagicFormsComponent } from './magic-forms/magic-forms.component';
 import { CharacterTypesComponent } from './character-types/character-types.component';
+import { MagiDescriptionComponent } from './magi-description/magi-description.component';
+import { CharacterCreationGuideComponent } from './character-creation-guide/character-creation-guide.component';
+import { MagicSystemComponent } from './magic-system/magic-system.component';
+import { AppRoutingComponent } from './app-routing/app-routing.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { CharacterTypesComponent } from './character-types/character-types.compo
     IntroductionComponent,
     TitleComponent,
     MagicFormsComponent,
-    CharacterTypesComponent
+    CharacterTypesComponent,
+    MagiDescriptionComponent,
+    CharacterCreationGuideComponent,
+    MagicSystemComponent,
+    AppRoutingComponent
   ],
   imports: [
     BrowserModule,
