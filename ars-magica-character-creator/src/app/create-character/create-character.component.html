@@ -1,36 +1,36 @@
 <app-title></app-title>
 <h1>Karakteralkotó</h1>
-<form (ngSubmit)="createCharacter()">
+<form [formGroup]="characterForm" (ngSubmit)="createCharacter()">
 <div>
     <label for="name">Név: </label>
-    <input autocomplete="off" required/>
+    <input id="name" formControlName="name" autocomplete="off" required/>
 
     <label for="age">Kor: </label>
-    <input autocomplete="off" required/>
+    <input id="age" formControlName="age" autocomplete="off" required/>
 </div>
 <div>
     <label>Intelliencia: </label>
-    <input type="text" required/>
+    <input id="intelligence" formControlName="intelligence" type="text" required/>
     <label >Észlelés: </label>
-    <input type="text" required/>
+    <input id="perception" formControlName="perception" type="text" required/>
 </div>
 <div>
     <label >Erő:</label>
-    <input type="text" required/>
+    <input id="strength" formControlName="strength" type="text" required/>
     <label >Stamina: </label>
-    <input type="text" required/>
+    <input id="stamina" formControlName="stamina" type="text" required/>
 </div>
 <div>
-    <label>Megjelenés: </label>
-    <input type="text" required/>
     <label>Kommunikáció: </label>
-    <input type="text" required/>
+    <input id="communication" formControlName="communication" type="text" required/>
+    <label>Megjelenés: </label>
+    <input id="presence" formControlName="presence" type="text" required/>
 </div>
 <div>
     <label >Ügyesség: </label>
-    <input type="text" required/>
+    <input id="dexterity" formControlName="dexterity" type="text" required/>
     <label >Gyorsaság: </label>
-    <input type="text" required/>
+    <input id="quickness" formControlName="quickness" type="text" required/>
 </div>
 <button type="submit">Save</button>
 </form>
