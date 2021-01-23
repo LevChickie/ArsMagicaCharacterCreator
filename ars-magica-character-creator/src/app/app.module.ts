@@ -10,6 +10,10 @@ import { CharacterTypesComponent } from './character-types/character-types.compo
 import { MagiDescriptionComponent } from './magi-description/magi-description.component';
 import { CharacterCreationGuideComponent } from './character-creation-guide/character-creation-guide.component';
 import { MagicSystemComponent } from './magic-system/magic-system.component';
+import { CreateCharacterComponent } from './create-character/create-character.component';
+import { ReactiveFormsModule,FormsModule} from '@angular/forms';
+import { SkillDescriptionsComponent } from './skill-descriptions/skill-descriptions.component';
+import { VirtuesFlawsDescriptionsComponent } from './virtues-flaws-descriptions/virtues-flaws-descriptions.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,15 @@ import { MagicSystemComponent } from './magic-system/magic-system.component';
     MagiDescriptionComponent,
     CharacterCreationGuideComponent,
     MagicSystemComponent,
+    CreateCharacterComponent,
+    SkillDescriptionsComponent,
+    VirtuesFlawsDescriptionsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

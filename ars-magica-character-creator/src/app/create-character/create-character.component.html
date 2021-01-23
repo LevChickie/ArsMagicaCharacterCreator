@@ -1,0 +1,43 @@
+<app-title></app-title>
+<h1>Karakteralkotó</h1>
+<form [formGroup]='characterForm' (ngSubmit)="createCharacter()">
+<div>
+    <label for="name">Név: </label>
+    <input id="name" formControlName="name" autocomplete="off" required/>
+
+    <label for="age">Kor: </label>
+    <input id="age" formControlName="age" autocomplete="off" required/>
+</div>
+<h3>Jellemvonások kiosztása:</h3>
+<p>Minden jellemvonás kezdő értéke 0. A játékosnak 7 pont áll rendelkezésre, és 1 pontért 1 szintet lehet venni egy Jellemvonásban,
+    3 pontért 2 szintet, 6 pontért 3 szintet. Amennyiben a jellemvonást csökkentjük, 1 pontot lehet kapni -1-es szintért, 3 pontot -2-es szintért és 6 pontot -3-as szintért
+</p>
+<div>
+    <label>Intelliencia: </label>
+    <input id="intelligence" formControlName="intelligence" type="number" required placeholder=0 min=-3 max=3/>
+    <label >Észlelés: </label>
+    <input id="perception" formControlName="perception" type="number" required placeholder=0 min=-3 max=3/>
+</div>
+<div>
+    <label >Erő:</label>
+    <input id="strength" formControlName="strength" type="number" required placeholder=0 min=-3 max=3/>
+    <label >Stamina: </label>
+    <input id="stamina" formControlName="stamina" type="number" required placeholder=0 min=-3 max=3/>
+</div>
+<div>
+    <label>Kommunikáció: </label>
+    <input id="communication" formControlName="communication" type="number" required placeholder=0 min=-3 max=3/>
+    <label>Megjelenés: </label>
+    <input id="presence" formControlName="presence" type="number" required placeholder=0 min=-3 max=3/>
+</div>
+<div>
+    <label >Ügyesség: </label>
+    <input id="dexterity" formControlName="dexterity" type="number" required placeholder=0 min=-3 max=3/>
+    <label >Gyorsaság: </label>
+    <input id="quickness" formControlName="quickness" type="number" required placeholder=0 min=-3 max=3/>
+</div>
+<div>
+    <p>Elosztható xp: első 5 életévre összesen 35 xp, utána minden életévre évenként 15 xp</p>
+</div>
+<button type="submit">Save</button>
+</form>
