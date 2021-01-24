@@ -19,4 +19,5 @@ export interface Character {
     confidence: number;
     experiencePoint: number;
     equipment: Equipment[];
+    
 }

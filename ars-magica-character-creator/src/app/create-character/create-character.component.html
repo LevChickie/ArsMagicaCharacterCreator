@@ -14,13 +14,13 @@
 </p>
 <div>
     <label>Intelliencia: </label>
-    <input id="intelligence" formControlName="intelligence" type="number" required placeholder=0 min=-3 max=3/>
+    <input id="intelligence" formControlName="intelligence" type="number" required placeholder=0 min=-3 max=3 />
     <label >Észlelés: </label>
-    <input id="perception" formControlName="perception" type="number" required placeholder=0 min=-3 max=3/>
+    <input id="perception" formControlName="perception" type="number" required placeholder=0 min=-3 max=3 />
 </div>
 <div>
     <label >Erő:</label>
-    <input id="strength" formControlName="strength" type="number" required placeholder=0 min=-3 max=3/>
+    <input id="strength" formControlName="strength" type="number" required placeholder=0 min=-3 max=3 />
     <label >Stamina: </label>
     <input id="stamina" formControlName="stamina" type="number" required placeholder=0 min=-3 max=3/>
 </div>
@@ -39,5 +39,21 @@
 <div>
     <p>Elosztható xp: első 5 életévre összesen 35 xp, utána minden életévre évenként 15 xp</p>
 </div>
-<button type="submit">Save</button>
+<button class="button" type="submit">Save</button>
 </form>
+<div>
+    <h1 id="characterName"></h1>
+    <h3 id="characterAge"></h3>
+        <div class="row">
+            <p class="col-lg-3" id="characterIntelligence"></p>
+            <p class="col-lg-3" id="characterPerception"></p>
+            <p class="col-lg-3" id="characterStrength" ></p>
+            <p class="col-lg-3" id="characterStamina"></p>
+        </div>
+        <div>
+            <p class="col-lg-3" id="characterCommunication"></p>
+            <p class="col-lg-3" id="characterPresence"></p>
+            <p class="col-lg-3" id="characterDexterity"></p>
+            <p class="col-lg-3" id="characterQuickness"></p>
+        </div>
+</div>
