@@ -14,6 +14,7 @@ import { CreateCharacterComponent } from './create-character/create-character.co
 import { ReactiveFormsModule,FormsModule} from '@angular/forms';
 import { SkillDescriptionsComponent } from './skill-descriptions/skill-descriptions.component';
 import { VirtuesFlawsDescriptionsComponent } from './virtues-flaws-descriptions/virtues-flaws-descriptions.component';
+import { SkillListComponent } from './skill-list/skill-list.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { VirtuesFlawsDescriptionsComponent } from './virtues-flaws-descriptions/
     CreateCharacterComponent,
     SkillDescriptionsComponent,
     VirtuesFlawsDescriptionsComponent,
+    SkillListComponent,
   ],
   imports: [
     BrowserModule,
