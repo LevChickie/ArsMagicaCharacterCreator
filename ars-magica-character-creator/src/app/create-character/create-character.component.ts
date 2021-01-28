@@ -37,6 +37,8 @@ export class CreateCharacterComponent implements OnInit {
     this.createCharacterService.SetPresence(this.characterForm.value.presence);
     this.createCharacterService.SetDexterity(this.characterForm.value.dexterity);
     this.createCharacterService.SetQuickness(this.characterForm.value.quickness);
+    this.createCharacterService.CalculateExperience();
+    this.createCharacterService.StartingConfidence();
     this.updatePage();
   }
   updatePage(){
@@ -51,6 +53,8 @@ export class CreateCharacterComponent implements OnInit {
     document.getElementById("characterPresence").innerText=this.createCharacterService.GetPresence().toString();
     document.getElementById("characterDexterity").innerText=this.createCharacterService.GetDexterity().toString();
     document.getElementById("characterQuickness").innerText=this.createCharacterService.GetQuickness().toString();
-    }
+    document.getElementById("characterExperience").innerText=this.createCharacterService.GetExperience().toString();
+    document.getElementById("characterConfidence").innerText=this.createCharacterService.GetConfidence().toString();
+  }
   
 }

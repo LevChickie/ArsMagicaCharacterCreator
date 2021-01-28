@@ -8,33 +8,29 @@ export class CreateCharacterServiceService {
   character : Character;
   constructor() { 
     this.character = new Character()
+    this.character.confidence =0;
   }
-
-  getCharacter(
-  name:any,
-  age:any,
-  intelligence:any,
-  perception:any,
-  strength:any,
-  stamina:any,
-  communication:any,
-  presence:any,
-  dexterity:any,
-  quickness:any,
-  ){
-    this.character.name=name;
-    this.character.age=age;
-    this.character.intelligence=intelligence;
-    this.character.perception=perception;
-    this.character.strength=strength;
-    this.character.stamina=stamina;
-    this.character.communication=communication;
-    this.character.presence=presence;
-    this.character.dexterity=dexterity;
-    this.character.quickness=quickness;
+  StartingConfidence(){
     this.character.confidence=0;
-    this.character.experiencePoint = 35+(age-5)*15;
-    console.log(name+": "+age);
+  }
+  IncreaseConfidence (){
+    this.character.confidence++;
+  }
+  CalculateExperience(){
+    if(this.character.age>5){
+      this.character.experiencePoint=50;
+      var ageLeft = this.character.age-5;
+      this.character.experiencePoint+=(ageLeft*15);
+    }
+    else{
+      this.character.experiencePoint=50;
+    }
+  }
+  GetConfidence():number{
+    return this.character.confidence;
+  }
+  GetExperience():number{
+    return this.character.experiencePoint;
   }
   GetAge():number{
     return this.character.age;
