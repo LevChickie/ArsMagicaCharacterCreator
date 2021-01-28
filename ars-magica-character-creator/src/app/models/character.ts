@@ -1,7 +1,7 @@
 import {Skill} from './skill'
 import { Equipment } from './equipment';
 import { VirtueAndFlaw } from './virtueAndFlaw';
-export interface Character {
+export class Character {
     name: string;
     age: number;
     type: string;
