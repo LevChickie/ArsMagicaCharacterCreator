@@ -22,6 +22,6 @@ export class SkillListComponent implements OnInit {
   }
   ImproveSkill()
   {
-    this.characterService.ImproveSkill(this.skillControl.value.name,this.skillValue);
+   // this.characterService.ImproveSkill(this.skillControl.value.name,this.skillValue);
   }
 }
