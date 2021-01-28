@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Character } from '../models/character';
+import { Skill } from '../models/skill';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,9 @@ export class CreateCharacterServiceService {
   constructor() { 
     this.character = new Character()
     this.character.confidence =0;
+  }
+  ImproveSkill(name:string, point:number){
+    this.character.skill.find(skill =>skill.name==name).value=point;
   }
   StartingConfidence(){
     this.character.confidence=0;
@@ -81,5 +85,12 @@ export class CreateCharacterServiceService {
   }
   SetName(name:string){
     this.character.name=name;
+  }
+  SetSkillList(skills:Skill[])
+  {
+    this.character.skill=skills;
+  }
+  GetSkillList():Skill[]{
+    return this.character.skill;
   }
 }

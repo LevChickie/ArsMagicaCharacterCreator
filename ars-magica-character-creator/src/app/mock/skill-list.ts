@@ -1,6 +1,6 @@
 import { Skill } from '../models/skill'
 
-export const Skills:Skill[]=[
+export var Skills:Skill[]=[
     {name:"Lore",value:0},
     {name:"Animal Handling",value:0},
     {name:"Athletics",value:0},
